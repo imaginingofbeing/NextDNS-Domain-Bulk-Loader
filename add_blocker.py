@@ -2,14 +2,14 @@ import time
 import random
 from nextdnsapi.api import *
 
-login = input("Email: ")
-passwrd = input("Passwrd: ") 
+login = input("Email: derekruvalcaba@icloud.com")
+passwrd = input("Passwrd: Derekru090810") 
 
 header = account.login(login, passwrd)
 print(account.list(header))
-config = input("id: ")
+config = input("id: 95d731")
 
-file_name = input("database: pi-hole.txt")
+file_name = input("database: add_blocker.py")
 with open(file_name, 'r') as saved_domains:
 
     for i in saved_domains:
@@ -1255,4 +1255,5 @@ dev.spotify.com
         a = denylist.blockdomain(i.strip(), config, header)
 
         print(a)
+
 
